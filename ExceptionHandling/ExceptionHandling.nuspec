@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <authors>$author$</authors>
+    <description>$description$</description>
+    <projectUrl>https://github.com/affecto/dotnet-AngularJS.TypeScript.ExceptionHandling</projectUrl>
+    <tags>affecto angular angularjs typescript server error handling exception service interceptor</tags>
+    <releaseNotes>Moved to GitHub.</releaseNotes>
+    <dependencies>
+      <dependency id="Affecto.AngularJS.TypeScript.Base" version="2.0.1" />
+      <dependency id="AngularJS.Core" version="1.3.15" />
+      <dependency id="angularjs.TypeScript.DefinitelyTyped" version="4.1.1" />
+      <dependency id="AngularTranslate" version="2.1.0" />
+      <dependency id="angular-translate.TypeScript.DefinitelyTyped" version="0.9.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="Scripts\ExceptionHandling\**\*.ts" target="content\App\Packages\ExceptionHandling"/>
+  </files>
+</package>
