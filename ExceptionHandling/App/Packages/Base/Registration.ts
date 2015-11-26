@@ -29,8 +29,6 @@ module Affecto.Registration
         angular.module(moduleName).directive(directiveName, factory);
     }
 
-    this should not compile
-
     export function registerService(type: any, typeName: string)
     {
         var moduleName: string = getModuleName(typeName);
