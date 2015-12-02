@@ -7,7 +7,7 @@
     <description>$description$</description>
     <projectUrl>https://github.com/affecto/dotnet-AngularJS.TypeScript.ExceptionHandling</projectUrl>
     <tags>affecto angular angularjs typescript server error handling exception service interceptor</tags>
-    <releaseNotes>Moved to GitHub.</releaseNotes>
+    <releaseNotes>Added type check to error code.</releaseNotes>
     <dependencies>
       <dependency id="Affecto.AngularJS.TypeScript.Base" version="2.0.1" />
       <dependency id="AngularJS.Core" version="1.3.15" />
