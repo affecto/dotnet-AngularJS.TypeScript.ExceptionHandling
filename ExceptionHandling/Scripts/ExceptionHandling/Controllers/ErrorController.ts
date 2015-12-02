@@ -9,6 +9,7 @@ module Affecto.ExceptionHandling
         public userName: string;
         public password: string;
         private errorCode: string;
+        private errorCodeUndefined: string = "ERROR_UNDEFINED";
 
         constructor(private $scope: Base.IControllerScope, private $location: angular.ILocationService, private $translate: angular.translate.ITranslateService)
         {
@@ -20,12 +21,20 @@ module Affecto.ExceptionHandling
 
         public get errorMessage(): string
         {
-            var code: string = "ERROR_" + this.errorCode;
+            var code: string;
+            if (typeof (this.errorCode) !== "string")
+            {
+                code = this.errorCodeUndefined;
+            }
+            else
+            {
+                code = "ERROR_" + this.errorCode;
+            }
             var error: string = this.$translate.instant(code);
 
             if (this.errorCode == null || error === code)
             {
-                error = this.$translate.instant("ERROR_UNDEFINED");
+                error = this.$translate.instant(this.errorCodeUndefined);
             }
             return error;
         }
